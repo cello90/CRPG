@@ -24,6 +24,8 @@
 
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "Scene_Boot.h"
+#include "Scene_CardTest.h"
 
 // #define USE_AUDIO_ENGINE 1
 
@@ -41,6 +43,7 @@ static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
 AppDelegate::AppDelegate()
 {
+
 }
 
 AppDelegate::~AppDelegate() 
@@ -67,7 +70,8 @@ static int register_all_packages()
     return 0; //flag for packages manager
 }
 
-bool AppDelegate::applicationDidFinishLaunching() {
+bool AppDelegate::applicationDidFinishLaunching() 
+{
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
@@ -108,7 +112,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    //auto scene = HelloWorld::createScene();
+    auto scene = Scene_Boot::createScene();
+    //auto scene = Scene_CardTest::createScene();
 
     // run
     director->runWithScene(scene);
@@ -117,7 +123,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 }
 
 // This function will be called when the app is inactive. Note, when receiving a phone call it is invoked.
-void AppDelegate::applicationDidEnterBackground() {
+void AppDelegate::applicationDidEnterBackground() 
+{
     Director::getInstance()->stopAnimation();
 
 #if USE_AUDIO_ENGINE
@@ -126,7 +133,8 @@ void AppDelegate::applicationDidEnterBackground() {
 }
 
 // this function will be called when the app is active again
-void AppDelegate::applicationWillEnterForeground() {
+void AppDelegate::applicationWillEnterForeground() 
+{
     Director::getInstance()->startAnimation();
 
 #if USE_AUDIO_ENGINE

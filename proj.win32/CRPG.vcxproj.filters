@@ -1,26 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\AppDelegate.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Scene_Boot.cpp">
+      <Filter>Source Files\Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StateMachine.cpp">
+      <Filter>Source Files\Classes\General\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\State_GameInit.cpp">
+      <Filter>Source Files\Classes\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\State.cpp">
+      <Filter>Source Files\Classes\General\State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene_MainMenu.cpp">
+      <Filter>Source Files\Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene_CardTest.cpp">
+      <Filter>Source Files\Classes\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\AppDelegate.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
@@ -36,6 +48,21 @@
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\Tests\B.png">
+      <Filter>Resources\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\Tests\G.png">
+      <Filter>Resources\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\Tests\R.png">
+      <Filter>Resources\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\Tests\U.png">
+      <Filter>Resources\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\Tests\W.png">
+      <Filter>Resources\Tests</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
@@ -44,6 +71,30 @@
     </ClInclude>
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene_Boot.h">
+      <Filter>Source Files\Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StateMachine.h">
+      <Filter>Source Files\Classes\General\State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\State_GameInit.h">
+      <Filter>Source Files\Classes\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\State.h">
+      <Filter>Source Files\Classes\General\State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene_MainMenu.h">
+      <Filter>Source Files\Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene_CardTest.h">
+      <Filter>Source Files\Classes\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +108,9 @@
   <ItemGroup>
     <Filter Include="Resources">
       <UniqueIdentifier>{FC5F9E9D-29BE-33BC-BD47-895F39713AA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Tests">
+      <UniqueIdentifier>{C263153E-451C-3900-80B0-6CE2626010BE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\fonts">
       <UniqueIdentifier>{955CA5D3-E99C-356C-BDB3-FBF6F48F37C6}</UniqueIdentifier>
@@ -72,6 +126,24 @@
     </Filter>
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{1FE8439B-B374-33DF-B809-07E2FD00B3B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Scenes">
+      <UniqueIdentifier>{943edb59-8db9-4339-8f50-4b1d9542b936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\General">
+      <UniqueIdentifier>{d2da1df7-5df4-4421-80d9-a1bcaebb28a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\General\State Machine">
+      <UniqueIdentifier>{e03a1a6e-aa55-4ff1-9598-73d917ca58a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\States">
+      <UniqueIdentifier>{21595199-720e-4afb-8051-f843e532db06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Engine">
+      <UniqueIdentifier>{6d432aa5-17cb-41b4-9b65-cbd3fa706f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test">
+      <UniqueIdentifier>{fec6486c-dc28-4e5b-a155-1bda788a7d8a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

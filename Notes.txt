@@ -1,0 +1,6 @@
+https://cocos.readme.io/docs
+https://docs.cocos2d-x.org/cocos2d-x/v4/en/
+https://gamefromscratch.com/cocos2d-x-c-game-programming-tutorial-series/
+
+
+https://www.youtube.com/watch?v=k_qIyPiT82Y
