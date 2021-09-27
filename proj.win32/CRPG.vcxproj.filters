@@ -31,6 +31,9 @@
     <ClCompile Include="..\Classes\Scene_CardTest.cpp">
       <Filter>Source Files\Classes\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\State_TestState.cpp">
+      <Filter>Source Files\Classes\States</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.h">
@@ -95,6 +98,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Scene_CardTest.h">
       <Filter>Source Files\Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\State_TestState.h">
+      <Filter>Source Files\Classes\States</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

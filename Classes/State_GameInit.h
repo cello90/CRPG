@@ -5,6 +5,11 @@
 class State_GameInit : public State 
 {
 public:
-	void Enter();
-	void Exit();
+	~State_GameInit(void) { State::OnDestroy(); };
+	char* GetName() override;
+	void Enter() override;
+	void Exit() override;
+
+protected:
+	void OnCreate() override;
 };

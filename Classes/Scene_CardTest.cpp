@@ -1,5 +1,8 @@
 #include "Scene_CardTest.h"
 #include "ui/CocosGUI.h"
+#include "StateMachine.h"
+#include "State_GameInit.h"
+#include "State_TestState.h"
 
 USING_NS_CC;
 
@@ -19,10 +22,25 @@ bool Scene_CardTest::init()
     // Screen Info
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+    // Test create state machine
+    auto* stateMachineLayer = Layer::create();
+    auto* stateMachine = StateMachine::create();
+    stateMachineLayer->addChild(stateMachine);
+    State* gameInit = new State_GameInit();
+    stateMachine->SetCurrentState(gameInit);
     
     auto* testCard = Scene_CardTest::createNewCard();
     testCard->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     this->addChild(testCard);
+
+    auto mouseListener = EventListenerMouse::create();
+    mouseListener->onMouseDown = [=](EventMouse* event)
+    {
+        State* testState = new State_TestState();
+        stateMachine->SetCurrentState(testState);
+    };
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouseListener, this);
 }
 
 cocos2d::Node* Scene_CardTest::createNewCard()
@@ -75,6 +93,18 @@ cocos2d::Node* Scene_CardTest::createNewCard()
     cardTypeLabel->setTextColor(cocos2d::Color4B(0, 0, 0, 255));
     cardTypeLabel->setPosition(Vec2(-45, -69));
     cardNode->addChild(cardTypeLabel, 5);
+
+    // Card click
+    auto touchListener = EventListenerMouse::create();
+    touchListener->setEnabled(true);
+    touchListener->onMouseDown = [](cocos2d::Event* event)
+    {
+        CCLOG("Touched");
+    };
+    touchListener->onMouseMove = [](cocos2d::Event* event)
+    {
+        CCLOG("Moved");
+    };
 
     return cardNode;
 }

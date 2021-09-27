@@ -807,6 +807,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\State.h" />
     <ClInclude Include="..\Classes\StateMachine.h" />
     <ClInclude Include="..\Classes\State_GameInit.h" />
+    <ClInclude Include="..\Classes\State_TestState.h" />
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\AppDelegate.h" />
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.h" />
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.h" />
@@ -817,6 +818,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\State.cpp" />
     <ClCompile Include="..\Classes\StateMachine.cpp" />
     <ClCompile Include="..\Classes\State_GameInit.cpp" />
+    <ClCompile Include="..\Classes\State_TestState.cpp" />
     <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\AppDelegate.cpp" />
     <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.cpp" />
