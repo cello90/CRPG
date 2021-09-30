@@ -3,6 +3,9 @@
 #include "StateMachine.h"
 #include "State_GameInit.h"
 #include "State_TestState.h"
+#include "GameManager.h"
+
+#include <iostream>
 
 USING_NS_CC;
 
@@ -18,6 +21,15 @@ bool Scene_CardTest::init()
     {
         return false;
     }
+
+    // Get GameManager
+    CCLOG("Should show something below");
+    GameManager* gm = GameManager::GetInstance();
+    int testInt = gm->GetTestInt();
+    cocos2d::log("testInt from GameManager:: %d", testInt);
+
+    //std::string str = std::to_string(testInt);
+    //CCLOG(str.c_str());
 
     // Screen Info
     auto visibleSize = Director::getInstance()->getVisibleSize();

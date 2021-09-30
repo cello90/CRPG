@@ -34,6 +34,18 @@
     <ClCompile Include="..\Classes\State_TestState.cpp">
       <Filter>Source Files\Classes\States</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\NotificationCenter.cpp">
+      <Filter>Source Files\Classes\Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameManager.cpp">
+      <Filter>Source Files\Classes\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Event.cpp">
+      <Filter>Source Files\Classes\Notifications\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Event_UserEvent.cpp">
+      <Filter>Source Files\Classes\Notifications\Events</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.h">
@@ -102,6 +114,21 @@
     <ClInclude Include="..\Classes\State_TestState.h">
       <Filter>Source Files\Classes\States</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\NotificationCenter.h">
+      <Filter>Source Files\Classes\Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EventDispatcher.h">
+      <Filter>Source Files\Classes\Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameManager.h">
+      <Filter>Source Files\Classes\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Event.h">
+      <Filter>Source Files\Classes\Notifications\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Event_UserEvent.h">
+      <Filter>Source Files\Classes\Notifications\Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Zac\OneDrive\Cocos\CRPG\CMakeLists.txt" />
@@ -150,6 +177,15 @@
     </Filter>
     <Filter Include="Source Files\Test">
       <UniqueIdentifier>{fec6486c-dc28-4e5b-a155-1bda788a7d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Notifications">
+      <UniqueIdentifier>{c9a6152e-0d7d-44e8-af64-09d633c798df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Managers">
+      <UniqueIdentifier>{3fe56501-ef93-4e51-ab52-8eebe7bda00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Notifications\Events">
+      <UniqueIdentifier>{d7bbd2f8-7326-4747-b408-fd6887ebc748}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

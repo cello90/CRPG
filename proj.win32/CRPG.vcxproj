@@ -801,6 +801,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Classes\Event.h" />
+    <ClInclude Include="..\Classes\EventDispatcher.h" />
+    <ClInclude Include="..\Classes\Event_UserEvent.h" />
+    <ClInclude Include="..\Classes\GameManager.h" />
+    <ClInclude Include="..\Classes\NotificationCenter.h" />
     <ClInclude Include="..\Classes\Scene_Boot.h" />
     <ClInclude Include="..\Classes\Scene_CardTest.h" />
     <ClInclude Include="..\Classes\Scene_MainMenu.h" />
@@ -812,6 +817,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\Classes\HelloWorldScene.h" />
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\main.h" />
     <ClInclude Include="C:\Users\Zac\OneDrive\Cocos\CRPG\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\Event.cpp" />
+    <ClCompile Include="..\Classes\Event_UserEvent.cpp" />
+    <ClCompile Include="..\Classes\GameManager.cpp" />
+    <ClCompile Include="..\Classes\NotificationCenter.cpp" />
     <ClCompile Include="..\Classes\Scene_Boot.cpp" />
     <ClCompile Include="..\Classes\Scene_CardTest.cpp" />
     <ClCompile Include="..\Classes\Scene_MainMenu.cpp" />

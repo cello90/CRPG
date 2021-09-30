@@ -1,5 +1,7 @@
 #include "Scene_Boot.h"
 #include "Scene_MainMenu.h"
+#include "GameManager.h"
+#include <iostream>
 
 USING_NS_CC;
 
@@ -18,13 +20,29 @@ bool Scene_Boot::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    // Sprites
+    // Background images
     auto sprite = Sprite::create("Tests/B.png");
     if (sprite != nullptr)
     {
         sprite->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
         this->addChild(sprite, 0);
     }
+
+    std::cout << "Test stuff!";
+    CCLOG("Scene_Boot!");
+
+    // Set up persistant
+    GameManager* gm = GameManager::GetInstance();
+    gm->SetTestInt(10);
+
+    // Set up EventDispatcher 
+
+
+    // Set up Keyboard event bindings
+
+
+    // Set up Mouse event bindings
+
 
     // Callback to have next scene show up
     changeSceneCallback = CallFunc::create(CC_CALLBACK_0(Scene_Boot::MoveToMainMenu, this));

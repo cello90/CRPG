@@ -4,3 +4,9 @@ https://gamefromscratch.com/cocos2d-x-c-game-programming-tutorial-series/
 
 
 https://www.youtube.com/watch?v=k_qIyPiT82Y
+
+Event system
+https://github.com/Pseudomanifold/Events
+
+Singleton
+https://gist.github.com/solkar/8651478
